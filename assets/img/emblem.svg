@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 230" role="img" aria-label="Эмблема ФК «Капкан»">
+  <!-- Временная эмблема. Замените этот файл настоящей эмблемой команды (имя файла оставьте тем же). -->
+  <path d="M100 6 L188 34 V110 C188 165 150 200 100 224 C50 200 12 165 12 110 V34 Z" fill="#14161c" stroke="#ff6a13" stroke-width="8"/>
+  <path d="M100 22 L174 45 V110 C174 156 142 186 100 207 C58 186 26 156 26 110 V45 Z" fill="none" stroke="#ffffff" stroke-width="2" opacity=".35"/>
+  <!-- челюсти капкана -->
+  <path d="M40 92 L52 70 L64 92 L76 70 L88 92 L100 70 L112 92 L124 70 L136 92 L148 70 L160 92" fill="none" stroke="#ff6a13" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M40 150 L52 172 L64 150 L76 172 L88 150 L100 172 L112 150 L124 172 L136 150 L148 172 L160 150" fill="none" stroke="#ff6a13" stroke-width="7" stroke-linejoin="round"/>
+  <!-- мяч -->
+  <circle cx="100" cy="121" r="24" fill="#ffffff"/>
+  <path d="M100 109 l11 8 -4 13 h-14 l-4 -13 z" fill="#14161c"/>
+  <path d="M100 97 v12 M111 117 l12 -4 M107 130 l7 10 M93 130 l-7 10 M89 117 l-12 -4" stroke="#14161c" stroke-width="2.5"/>
+  <text x="100" y="56" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="22" fill="#ffffff" letter-spacing="2">КАПКАН</text>
+</svg>

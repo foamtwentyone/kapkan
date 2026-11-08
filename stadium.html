@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Стадион — МФК «Капкан»</title>
+  <meta name="description" content="Домашняя арена МФК «Капкан»: адрес, как добраться, ближайшие домашние матчи.">
+  <link rel="icon" href="assets/img/emblem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="stadium">
+<div id="site-header"></div>
+<main>
+  <section class="page-head"><div class="container">
+    <div class="crumbs"><a href="index.html">Главная</a> / Стадион</div>
+    <h1 id="st-name"></h1>
+    <p id="st-address"></p>
+  </div></section>
+
+  <section class="section"><div class="container stadium-hero">
+    <div class="court" aria-label="Схема площадки">
+      <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#fff" stroke-width="2">
+        <rect x="0" y="0" width="400" height="200" fill="#d39556" stroke="none"/>
+        <g opacity=".25" stroke="#8a5a2b" stroke-width="1">
+          <path d="M0 25H400M0 50H400M0 75H400M0 100H400M0 125H400M0 150H400M0 175H400"/>
+        </g>
+        <rect x="6" y="6" width="388" height="188"/>
+        <line x1="200" y1="6" x2="200" y2="194"/>
+        <circle cx="200" cy="100" r="30"/>
+        <circle cx="200" cy="100" r="3" fill="#fff"/>
+        <path d="M6 40 A60 60 0 0 1 66 100 A60 60 0 0 1 6 160"/>
+        <path d="M394 40 A60 60 0 0 0 334 100 A60 60 0 0 0 394 160"/>
+        <circle cx="66" cy="100" r="2.5" fill="#fff"/><circle cx="334" cy="100" r="2.5" fill="#fff"/>
+        <circle cx="106" cy="100" r="2.5" fill="#fff"/><circle cx="294" cy="100" r="2.5" fill="#fff"/>
+        <rect x="0" y="85" width="6" height="30" fill="#ff6a13" stroke="#fff"/>
+        <rect x="394" y="85" width="6" height="30" fill="#ff6a13" stroke="#fff"/>
+        <image href="assets/img/emblem.svg" x="182" y="80" width="36" height="40" opacity=".55"/>
+      </svg>
+    </div>
+    <div>
+      <div class="hero__kicker">Домашняя арена МФК «Капкан»</div>
+      <p id="st-desc" style="font-size:17px"></p>
+      <a class="btn" id="st-map" href="#" target="_blank" rel="noopener">Открыть на карте</a>
+    </div>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="container">
+    <div class="stadium-facts" id="st-facts" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))"></div>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="container">
+    <div class="section__head"><h2 class="section__title">Инфраструктура</h2></div>
+    <ul class="features" id="st-features"></ul>
+  </div></section>
+
+  <section class="section" style="padding-top:0"><div class="container">
+    <div class="section__head"><h2 class="section__title">Как добраться</h2></div>
+    <div class="transport" id="st-transport"></div>
+  </div></section>
+
+  <section class="section section--dark"><div class="container">
+    <div class="section__head"><h2 class="section__title">Ближайшие домашние матчи</h2><a class="more" href="matches.html">Календарь →</a></div>
+    <div class="match-strip" id="st-next"></div>
+  </div></section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

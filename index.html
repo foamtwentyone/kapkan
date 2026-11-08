@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>МФК «Капкан» — официальный сайт футзальной команды</title>
+  <meta name="description" content="Официальный сайт любительской футзальной команды «Капкан» из города Капкан: заявка, матчи, таблица, стадион.">
+  <link rel="icon" href="assets/img/emblem.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div>
+        <div class="hero__kicker">Официальный сайт · футзал</div>
+        <h1>МФК <span>«Капкан»</span></h1>
+        <p>Любительская футзальная команда из города Капкан. Кто попал — тот не уйдёт.</p>
+        <div class="btn-row">
+          <a class="btn" href="matches.html">Календарь матчей</a>
+          <a class="btn btn--ghost" href="team.html">Состав команды</a>
+        </div>
+        <div style="margin-top:32px" id="next-match"></div>
+      </div>
+      <img class="hero__emblem" src="assets/img/emblem.svg" alt="Эмблема МФК «Капкан»">
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section__head"><h2 class="section__title">Матчи</h2><a class="more" href="matches.html">Все матчи →</a></div>
+      <div class="match-strip" id="match-strip"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container home-grid">
+      <div>
+        <div class="section__head"><h2 class="section__title">Новости</h2></div>
+        <div class="news" id="news"></div>
+      </div>
+      <div>
+        <div class="section__head"><h2 class="section__title">Таблица</h2><a class="more" href="table.html">Полностью →</a></div>
+        <div id="mini-table"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section__head"><h2 class="section__title">Лидеры сезона</h2></div>
+      <div class="leaders" id="leaders"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head"><h2 class="section__title">Команда</h2><a class="more" href="team.html">Вся заявка →</a></div>
+      <div class="squad-slider" id="squad-slider"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="card" style="padding:32px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;border-left:6px solid var(--c-primary)">
+        <div><div class="hero__kicker">Домашняя арена</div><div id="stadium-teaser"></div></div>
+        <a class="btn btn--dark" href="stadium.html">Как добраться</a>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
