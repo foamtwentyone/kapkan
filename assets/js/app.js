@@ -24,7 +24,7 @@
   const age = (born) => { const b = new Date(born), n = new Date(); let a = n.getFullYear() - b.getFullYear(); if (n < new Date(n.getFullYear(), b.getMonth(), b.getDate())) a--; return a; };
 
   function crest(name, size) {
-    if (name === D.club.name) return `<img src="${D.club.emblem}" alt="${esc(name)}"${size ? ` style="width:${size}px;height:${size * 1.15}px"` : ""}>`;
+    if (name === D.club.name) return `<img src="${D.club.emblem}" alt="${esc(name)}"${size ? ` style="height:${Math.round(size * 1.2)}px;width:auto"` : ""}>`;
     let h = 0; for (const ch of name) h = (h * 31 + ch.charCodeAt(0)) % 360;
     return `<span class="crest" style="background:hsl(${h} 45% 35%)${size ? `;width:${size}px;height:${size}px` : ""}">${esc(name[0])}</span>`;
   }
@@ -51,7 +51,7 @@
       <span class="topbar__links">${D.club.socials.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`).join("")}</span>
     </div></div>
     <header class="header"><div class="container">
-      <a class="logo" href="index.html"><img src="${D.club.emblem}" alt="Эмблема"><span><span class="logo__name">${esc(D.club.name)}</span><br><span class="logo__sub">Футзал · г. ${esc(D.club.city)}</span></span></a>
+      <a class="logo" href="index.html"><img src="${D.club.emblem}" alt="Эмблема"><span><span class="logo__name">${esc(D.club.name)}</span><br><span class="logo__sub">Футзальный клуб · ${esc(D.club.city)}</span></span></a>
       <nav class="nav" id="nav">${NAV.map(([h, t, p]) => `<a href="${h}"${p === page ? ' class="active"' : ""}>${t}</a>`).join("")}</nav>
       <button class="burger" aria-label="Меню" id="burger"><span></span><span></span><span></span></button>
     </div></header>`;
@@ -72,7 +72,7 @@
           ${D.club.socials.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></li>`).join("")}
         </ul></div>
       </div>
-      <div class="footer__bottom"><span>© ${new Date().getFullYear()} МФК «${esc(D.club.name)}», г. ${esc(D.club.city)}</span><span>Любительский футзал</span></div>
+      <div class="footer__bottom"><span>© ${new Date().getFullYear()} ФК «${esc(D.club.name)}», ${esc(D.club.city)}</span><span>Любительский футзал</span></div>
     </div></footer>`;
 
   /* ---------- общие блоки ---------- */

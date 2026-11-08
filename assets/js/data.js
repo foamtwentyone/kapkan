@@ -8,13 +8,13 @@
 window.KAPKAN = {
   club: {
     name: "Капкан",
-    fullName: "Мини-футбольный клуб «Капкан»",
-    city: "Капкан",
-    founded: 2019,
-    league: "Любительская лига г. Капкан по футзалу",
+    fullName: "Футзальный клуб «Капкан»",
+    city: "Балаково",
+    founded: 2020,
+    league: "Любительская лига г. Балаково по футзалу",
     season: "2026/27",
     slogan: "Кто попал — тот не уйдёт",
-    emblem: "assets/img/emblem.svg",
+    emblem: "assets/img/emblem.png",
     socials: [
       { name: "ВКонтакте", url: "https://vk.com/" },
       { name: "Telegram", url: "https://t.me/" }
@@ -78,7 +78,7 @@ window.KAPKAN = {
    * form — последние результаты (В / Н / П), от старых к новым.
    */
   table: {
-    title: "Любительская лига г. Капкан — Высший дивизион",
+    title: "Любительская лига г. Балаково — Высший дивизион",
     pointsForWin: 3,
     zones: [ // подсветка мест
       { from: 1, to: 1, label: "Чемпион", color: "gold" },
@@ -102,7 +102,7 @@ window.KAPKAN = {
   /* ---------------- ДОМАШНЯЯ АРЕНА ---------------- */
   stadium: {
     name: "СК «Ледокол»",
-    address: "г. Капкан, ул. Спортивная, 12",
+    address: "г. Балаково, ул. Спортивная, 12",
     opened: 2011,
     capacity: 450,
     court: "40 × 20 м, паркет",
@@ -118,7 +118,7 @@ window.KAPKAN = {
       { type: "Автомобиль", text: "Въезд на парковку с ул. Спортивной, 80 мест" }
     ],
     // Ссылка на карту (Яндекс или Google). Откроется по кнопке «Открыть на карте».
-    mapUrl: "https://yandex.ru/maps/?text=%D0%9A%D0%B0%D0%BF%D0%BA%D0%B0%D0%BD%2C%20%D1%83%D0%BB.%20%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%2C%2012"
+    mapUrl: "https://yandex.ru/maps/?text=%D0%91%D0%B0%D0%BB%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE%2C%20%D1%83%D0%BB.%20%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%2C%2012"
   },
 
   /* ---------------- НОВОСТИ (на главной) ---------------- */
